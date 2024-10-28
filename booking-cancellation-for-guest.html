@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Confirmation Email</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f8fafc;
+        color: #333;
+        line-height: 1.5;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 391px;
+        margin: auto;
+        border-radius: 8px;
+        padding: 40px;
+        text-align: center;
+      }
+      .logo {
+        margin-bottom: 20px;
+      }
+      .booking-body {
+        padding: 30px 24px;
+        background-color: #fff;
+        border-radius: 25px;
+      }
+      .booking-message {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 28px;
+      }
+      .hotel-logo {
+        margin: 0 auto 14px;
+      }
+      .hotel-logo img {
+        width: 140px;
+      }
+      .welcome-message {
+        font-size: 14px;
+        color: #000000;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .booking-details {
+        border-radius: 8px;
+        text-align: left;
+        margin: 0 auto;
+        max-width: 500px;
+        font-size: 14px;
+        border: 1px solid #f1f5f9;
+        border-radius: 5px;
+      }
+      .booking-details-header {
+        background-color: #f1f5f9;
+        padding: 12px;
+        border-radius: 6px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 15px;
+      }
+      .guest-icon {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+      }
+      .guest-icon img {
+        width: 14px;
+        height: 14px;
+      }
+      .guest-name {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      .booking-info {
+        padding: 15px;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+      .booking-info-new {
+        color: #005b45;
+      }
+      .booking-end {
+        margin-top: 20px;
+        text-align: left;
+        font-size: 14px;
+      }
+
+      .status-danger {
+        color: #5b0000;
+        display: block;
+        line-height: 1;
+        padding: 8px 18px;
+        border-radius: 10px;
+        font-weight: 600;
+        font-size: 16px;
+        background-color: #ffcaca;
+        width: fit-content;
+        margin: 0 auto 14px;
+      }
+      .footer {
+        width: 70%;
+        margin: 30px auto 0;
+        font-size: 10px;
+        color: #aaa;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+      }
+      .footer img {
+        width: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <div class="logo">
+        <a href="#">
+          <img src="hotel-img-hero.jpg" alt="Aloha Logo" />
+        </a>
+      </div>
+
+      <div class="booking-body">
+        <span class="status-danger"> Your booking has been updated </span>
+
+        <div class="hotel-logo">
+          <img src="hotel-logo.png" alt="Hotel Charlton Logo" />
+        </div>
+
+        <div class="welcome-message">
+          <p>
+            Dear {guest-full-name}, <br /><br />
+
+            We’re sorry to see you go! Your reservation at {hotel-name} has been
+            canceled. <br /><br />
+
+            If this was a mistake or if you need assistance with rebooking,
+            please contact us at {hotel-email-address} or {hotel-phone-number}
+            <br /><br />
+            Kind regards,<br />
+            {hotel-name}
+          </p>
+        </div>
+      </div>
+
+      <div class="footer">
+        Powered by<br />
+        <a href="#"
+          ><img src="logo-aloha-tint.png" alt="" class="aloha-logo-tint"
+        /></a>
+        <br />
+        Aloha is a trusted hotel management system used by hoteliers worldwide.
+      </div>
+    </div>
+  </body>
+</html>
